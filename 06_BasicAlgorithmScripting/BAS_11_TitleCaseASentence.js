@@ -9,7 +9,7 @@ function titleCase(str) {
     return splittedStr.join(" ");
   }
 
-  /* Solución cib nao
+  /* Solución con map
   function titleCase(str) {
     return str
       .toLowerCase()
