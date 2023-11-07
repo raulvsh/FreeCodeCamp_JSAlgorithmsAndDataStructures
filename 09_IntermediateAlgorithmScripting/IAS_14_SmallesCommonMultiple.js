@@ -8,15 +8,18 @@ function calcularMCD(a, b) {
   return a;
 }
 
-function smallestCommons(a, b) {
+function smallestCommons(arr) {
+  let a = arr[0];
+  let b= arr[1];
   // Calcula el MCM utilizando la fórmula MCM(a, b) = (a * b) / MCD(a, b)
   return (a * b) / calcularMCD(a, b);
 }
 
 // Ejemplo de uso
 const numero1 = 12;
-const numero2 = 18;cd
-const mcm = calcularMCM(numero1, numero2);
+const numero2 = 18;
+const mcm = smallestCommons([numero1, numero2]);
 console.log(`El MCM de ${numero1} y ${numero2} es ${mcm}`);
 
-  smallestCommons([1,5]);
+
+console.log(smallestCommons([1,5]));
